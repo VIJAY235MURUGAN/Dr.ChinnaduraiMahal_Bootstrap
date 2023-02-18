@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-image: url("https://gifimage.net/wp-content/uploads/2018/11/gold-animated-gif-1.gif");
+                background-position: center;
+                background-size: contain;
+                background-color: rgb(255, 215, 0);
+            }
+            p
+            {
+                color: aquamarine;
+                font-weight: bolder;
+                font-family: 'Times New Roman', Times, serif;
+                font-size:23.5px;
+                text-align: center;
+            }
+            .div
+            {
+                background-color: purple;
+            }
+            .text1
+            {
+                background-color: aquamarine;
+                color: rgb(200, 20, 150);
+                font-weight: bolder;
+                font-family: 'Times New Roman', Times, serif;
+                font-size:18.5px;
+                float: inline-start;
+            }
+            .number
+            {
+                background-color: aquamarine;
+                color: rgb(200, 20, 150);
+                font-weight: bolder;
+                font-family: 'Times New Roman', Times, serif;
+                font-size:18.5px;
+                float: right;
+            }
+            .date
+            {
+                background-color: aquamarine;
+                color: rgb(200, 20, 150);
+                font-weight: bolder;
+                font-family: 'Times New Roman', Times, serif;
+                font-size:18.5px;
+                float: right;
+            }
+            .boxl
+            {
+                background-color: aquamarine;
+                color: rgb(200, 20, 150);
+                font-weight: bolder;
+                font-family: 'Times New Roman', Times, serif;
+                font-size:18.5px;
+                float: left;
+            }
+            .boxr
+            {
+                background-color: aquamarine;
+                color: rgb(200, 20, 150);
+                font-weight: bolder;
+                font-family: 'Times New Roman', Times, serif;
+                font-size:18.5px;
+                float: right;
+            }
+            .button
+            {
+                background-color: aquamarine;
+                color: rgb(200, 20, 150);
+                font-weight: bolder;
+                font-family: 'Times New Roman', Times, serif;
+                font-size:18.5px;
+                align-content: center;
+            }
+            table , th , tr , td 
+            {
+                color: blue;
+                font-size: 18.5px;
+                font-weight: bolder;
+                font-family: 'Times New Roman', Times, serif;
+                border: 8.5px solid rgb(200, 50, 150);
+                border-style: groove;
+                border-spacing: 12.35px;
+                background-color: bisque;
+                text-align:center;
+            }
+
+        </style>
+    </head>
+<div class="div" id="MARRIAGE">
+<p>PLEASE ENTER YOUR DETAILS FOR ENQUIRY!</p>
+<label for="NAME" class="text1">YOUR FULL NAME PLEASE</label>
+<input type="text" class="boxl" id="NAME" name="NAME"><br>
+<label for="PHONE" class="number">YOUR PHONE NUMBER PLEASE</label>
+<input type="number" class="boxr" id="PHONE" name="PHONE"><br>
+<label for="email" class="text1">PLEASE ENTER YOUR email ADDRESS</label>
+<input type="text" class="boxl" id="email" name="email"><br>
+<label for="DATE" class="date">PLEASE ENTER YOUR REQUIRED DATE</label>
+<input type="date" class="boxr" id="DATE" name="DATE"><br>
+<center><input type="button" class="button" onclick="MARRIAGE()" value="SUBMIT!"></center>
+</div>
+<div class="div" id="HOME" style="display: none;">
+<center><span id="YOUR DETAILS" style="color: aquamarine; align-content: center; font-weight: bolder; font-family: 'Times New Roman', Times, serif; font-style: italic;"></span></center>
+<p><input type="button" class="button" onclick="comehome()" value="HOME!"></p>
+</div>
+<script>
+function MARRIAGE()
+{
+  var NAME = document.getElementById("NAME").value;
+  var PHONE= document.getElementById("PHONE").value;
+  var DATE = document.getElementById("DATE").value;
+  var email= document.getElementById("email").value;
+
+document.getElementById("YOUR DETAILS").innerHTML="YOUR NAME:   " + NAME + "<br>" + "YOUR PHONE NUMBER:   " + PHONE + "<br>" + "DATE REQUIRED:   " + DATE + "<br>" + "YOUR email I.D:   " + email + "<br>" + "WE WILL CONTACT YOU SOON! THANK YOU!!!";
+document.getElementById("HOME").style.display="block";
+document.getElementById("MARRIAGE").style.display="none";
+}
+function comehome()
+{
+document.getElementById("HOME").style.display="none";
+document.getElementById("MARRIAGE").style.display="block";
+}
+</script>
+<br>
+<body>
+    <center>
+    <table>
+        <tr>
+            <td>FUNCTIONS</td>
+            <td>MARRIAGE</td>
+            <td>ENGAGEMENT</td>
+            <td>MINI FUNCTIONS</td>
+            <td>OTHER EVENTS/MEETINGS</td>
+        </tr>
+        <tr>
+            <td>RENT</td>
+            <td>Rs.45000 per Day</td>
+            <td>Rs.25000 per Half Day</td>
+            <td>Rs.25000 per Half Day</td>
+            <td>Rs.10000 per 8 Hours</td>
+        </tr>
+        <tr>
+            <td>ELECTRICITY CHARGES</td>
+            <td>Rs.18/unit</td>
+            <td>Rs.18/unit</td>
+            <td>Rs.18/unit</td>
+            <td>Rs.18/unit</td>
+        </tr>
+        <tr>
+            <td>ROOM RENT - A/C</td>
+            <td>Rs.2000 per Day</td>
+            <td>Rs.2000 per Day</td>
+            <td>Rs.2000 per Day</td>
+            <td>-NOT ALLOWED-</td>
+        </tr>
+        <tr>
+            <td>ROOM RENT - NON A/C</td>
+            <td>Rs.1000 per Day</td>
+            <td>Rs.1000 per Day</td>
+            <td>Rs.1000 per Day</td>
+            <td>-NOT ALLOWED-</td>
+        </tr>
+        <tr>
+            <td>DEPOSIT</td>
+            <td>Rs.15000</td>
+            <td>Rs.10000</td>
+            <td>Rs.10000</td>
+            <td>-NOT APPLICABLE-</td>
+        </tr>
+    </table>
+</center>
+<center><img src="C:\Users\VIJAY M\Desktop\Dr.ChinnaduraiMahal images\vanakkam-2.png" alt="vanakkam" width="123.85" height="123.85"></center>
+<center><img src="C:\Users\VIJAY M\Desktop\Dr.ChinnaduraiMahal images\border design-6.jpg" alt="border design" width="1285.235" height="75"></center>
+</body>
+</html>
